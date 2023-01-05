@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+@import '~mdb-ui-kit/css/mdb.min.css';
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
+
+.contact-title{
+    font-family: "Anybody, cursive";
+}
+
+#carouselBasicExample{
+    width: 80vw !important;
+}
+
+body{
+    background-color: rgb(226, 234, 236) !important;
+}
+
+.body-background{
+    background-color: rgb(226, 234, 236) !important;
+}
