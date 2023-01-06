@@ -93,7 +93,7 @@ function Profile(props) {
    }, [])
   return (
     <>
-      <Navbar />
+      <Navbar username={props.username} />
       <div className="container editProfile rounded bg-white mt-5">
         <div className="row">
           <div className="col-md-4 border-right">

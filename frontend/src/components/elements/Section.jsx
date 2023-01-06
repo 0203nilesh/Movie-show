@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from "react";
 
-function Section() {
+function Section(props) {
   const [sectionData, setSectionData]= useState([])
     useEffect(() => {
        axios.get("/sectionData")
@@ -17,10 +17,13 @@ function Section() {
     console.log(sectionData);
   return (
     <>
-      <div className="container p-2 mt-4 d-flex justify-content-center align-items-center">
+    <div className="m-3">
+    <h2 className="ml-5 mt-2 mb-0 section-heading-font">{props.heading}</h2>
+      <div className="container p-2 mt-2 d-flex justify-content-center align-items-center">
         {sectionData.map((section, index)=>{
           return <Card key={index} title={section.title} detail={section.detail} src={section.src} />
         })}
+        </div>
             {/* <Card/>
             <Card/>
             <Card/>

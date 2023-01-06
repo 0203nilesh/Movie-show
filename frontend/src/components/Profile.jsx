@@ -43,7 +43,7 @@ function Profile(props) {
    }, [])
   return (
     <>
-    <Navbar username={props.username} />
+    <Navbar  username={props.username} />
       <section className="vh-90 mb-7" style={{backgroundColor: "#f4f5f7"}}>
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">

@@ -66,9 +66,9 @@ function Footer() {
           className="bottom-set text-center text-dark p-3"
           style={{backgroundColor:"black"}}
         >
-          © 2020 Copyright:
+          © 2023 Copyright:  
           <Link className="text-dark" to="https://mdbootstrap.com/">
-            MDBootstrap.com
+            MovieShow.com
           </Link>
         </div>
       </footer>

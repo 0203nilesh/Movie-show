@@ -68,15 +68,15 @@ function Login(props) {
        {alert.message}
       </div>
       <Navbar username={props.username} />
-      <div className="container w-25 pt-4 mb-9">
+      <div className="container w-25 pt-3 mb-5 mt-5">
         <form>
           <h3
-            className=" title mb-4 contact-title"
+            className=" title mt-4 contact-title"
             style={{ fontFamily: "Anybody, cursive" }}
           >
             Login
           </h3>
-          <div className="form-outline mb-4 ">
+          <div className="form-outline my-3 ">
             <input
               type="text"
               id="form2Example1"

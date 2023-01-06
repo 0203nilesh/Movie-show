@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
 @import '~mdb-ui-kit/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 .gradient-custom {
     /* fallback for old browsers */
     background: #f6d365;
@@ -25,4 +26,10 @@ body{
 
 .body-background{
     background-color: rgb(226, 234, 236) !important;
+}
+.heading-font{
+    font-family: cursive;
+}
+.section-heading-font{
+    font-family: 'Oswald', sans-serif;
 }

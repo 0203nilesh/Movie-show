@@ -6,12 +6,14 @@ function Navbar(props) {
   const navigate= useNavigate();
   const username= props.username;
   function logout(){
+    localStorage.removeItem("username");
+    localStorage.removeItem("id");
     navigate("/login");
     window.location.reload();
   }
   return (
     <>
-      <nav className="px-2 navbar body-background navbar-expand-lg navbar-light bg-light">
+      <nav className="px-2 font-monospace  navbar body-background navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="/">
         <img
             src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
@@ -41,7 +43,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="#">
-                Link
+                Movies
               </Link>
             </li>
             <li className="nav-item dropdown">
@@ -54,28 +56,27 @@ function Navbar(props) {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown
+                Web series
               </Link>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div className="dropdown-menu body-background" aria-labelledby="navbarDropdown">
                 <Link className="dropdown-item" to="#">
                   Action
                 </Link>
                 <Link className="dropdown-item" to="#">
-                  Another action
+                  Romance
                 </Link>
-                <div className="dropdown-divider"></div>
                 <Link className="dropdown-item" to="#">
-                  Something else here
+                  Comedy
                 </Link>
               </div>
             </li>
             <li className="nav-item">
               <Link className="nav-link disabled" to="#">
-                Disabled
+                Sports
               </Link>
             </li>
           </ul>
-          { username===''?<><Link to="/register">
+          { username==='' || username===null ?<><Link to="/register">
             <button
               className="mx-2 btn btn-outline-success my-2 my-sm-0"
               type="submit"

@@ -20,11 +20,11 @@ function Card(props) {
           </Link>
         </div>
         <div className="card-body">
-          <h5 className="card-title"> {props.title}  </h5>
-          <p className="card-text">
+          <h5 className="card-title heading-font"> {props.title}  </h5>
+          <p className="card-text font-monospace ">
             {props.detail}
           </p>
-          <Link to="#!" className="btn btn-primary">
+          <Link to="/play" className="btn btn-primary">
             Watch
           </Link>
         </div>

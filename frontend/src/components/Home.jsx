@@ -9,11 +9,11 @@ function Home(props){
         <>
         <Navbar username={props.username}/>
         <Carousel/>
-        <Section/>
-        <Section/>
-        <Section/>
-        <Section/>
-        <Footer/>
+        <Section heading="Popular"/>
+        <Section heading="Comedy" />
+        <Section heading="Web-Series" />
+        <Section heading="Action" />
+        <Footer heading="Sci-fi" />
         </>
     )
 }

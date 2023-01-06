@@ -66,8 +66,8 @@ function Carousel() {
                     alt="Sunset Over the City"
                   />
                   <div className="carousel-caption d-none d-md-block">
-                    <h5> {carousel.title} </h5>
-                    <p> {carousel.detail} </p>
+                    <h5 className="heading-font"> {carousel.title} </h5>
+                    <p className="font-monospace mb-1" > {carousel.detail} </p>
                   </div>
                 </div>
               </>
